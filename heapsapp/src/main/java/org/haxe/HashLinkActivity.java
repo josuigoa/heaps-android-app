@@ -1,8 +1,9 @@
-package io.heaps.android;
+package org.haxe;
 
+import java.io.File;
 import org.libsdl.app.SDLActivity;
 
-public class HeapsActivity extends SDLActivity {
+public class HashLinkActivity extends SDLActivity {
 
     // Used to load the native libraries on application startup.
     static {
@@ -18,5 +19,9 @@ public class HeapsActivity extends SDLActivity {
                 "SDL2",
                 "heapsapp"
         };
+    }
+
+    public File getFilesDir(String dir) {
+        return getFilesDir();
     }
 }
